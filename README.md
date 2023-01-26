@@ -1,3 +1,3 @@
 # TrackGo
 
-[https://opheliavrc.github.io/TrackGo/](s)
+Link to the [TrackGo](https://opheliavrc.github.io/TrackGo/) page.
