@@ -1,0 +1,12 @@
+.comment
+{
+    text-align: center;
+    color: #1a7d35;
+    font-size: 50px;
+}
+
+.content-offset
+{
+    position: relative;
+    left: -5%;
+}
