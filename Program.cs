@@ -12,7 +12,7 @@ namespace ProjectOS
             if (!app.Environment.IsDevelopment())
             {
                 app.UseExceptionHandler("/Error");
-                // https://aka.ms/aspnetcore-hsts.
+                // https://aka.ms/aspnetcore-hsts
                 app.UseHsts();
             }
 
