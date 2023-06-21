@@ -1,56 +1,87 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <title>ophura | hub</title>
-    <link href="styles.css" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </head>
-  <body>
-    <header>
-      <h1>
-        yay, finally! I made a website like many others did.
-        <br>just to leave it as is, for at least a year to come xd
-      </h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">hub</a></li>
-          <li><a href="index.html">hub page</a></li>
-          <li><a href="index.html">return to hub</a></li>
-          <li><a href="index.html">stay in hub</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section>
-        <h2>boring things to know</h2>
-        <p>trying to figure this out, for as long as life permets.</p>
-      </section>
-      <section>
-        <h2>chicken!!</h2>
-        <p>some things that a normal website is supposed to have:</p>
-        <ul>
-          <li>things like services to offer</li>
-          <li>knowledge</li>
-          <li>things such as prior experiences</li>
-          <li>and/or jobs (which I have none xd)</li>
-        </ul>
-      </section>
-      <section>
-        <h2>contact me (if you can xd)</h2>
-        <p>usually, this is a thing about contact info (that I didn't provide xd):</p>
-        <ul>
-          <li>email: ...</li>
-          <li>phone: ...</li>
-        </ul>
-      </section>
-    </main>
-    <footer>
-      <img width="25px" height="25px"
-          alt="copyleft icon retrieved from wikipedia, source: https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Copyleft.svg/25px-Copyleft.svg.png"
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Copyleft.svg/25px-Copyleft.svg.png">
-      </img>
-      <p>2023 Opuhra. All lefts reversed.</p>
-    </footer>  
-  </body>
+    <html>
+    <head>
+    <title>Ophura</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3e2;
+            margin: 0;
+            overflow: hidden
+        }
+        
+        #hello {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 48px;
+            color: #73ede5;
+            text-shadow: 2px 2px 4px rgba(18, 13, 5, 0.5)
+        }
+        
+        #hello:hover {
+            animation: shake 0.5s infinite
+        }
+        
+        @keyframes shake {
+            0% { transform: translate(-50%, -50%) }
+            25% { transform: translate(-50%, -50%) rotate(-5deg) }
+            75% { transform: translate(-50%, -50%) rotate(5deg) }
+            100% { transform: translate(-50%, -50%) }
+        }
+        
+        #confetti {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 9999
+        }
+        
+        .confetti {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: #ff6384;
+            border-radius: 50%;
+            pointer-events: none;
+            animation: confetti-fall 4s infinite
+        }
+        
+        @keyframes confetti-fall {
+            0% {
+                transform: translate(-50%, -50%) rotate(0deg);
+                opacity: 1
+            }
+            100% {
+                transform: translate(-50%, 100vh) rotate(720deg);
+                opacity: 0
+            }
+        }
+    </style>
+    </head>
+        <body>
+        <div id="hello">Ophura!</div>
+        <div id="confetti"></div>
+        <script>
+            function createConfetti() {
+                const confettiContainer = document.getElementById('confetti');
+                const colors = ['#ff6384', '#36a2eb', '#ffcd56', '#ff9f40'];
+                
+                for (let i = 0; i < 100; i++) {
+                    const confetti = document.createElement('div');
+                    confetti.className = 'confetti';
+                    confetti.style.left = `${Math.random() * 100}%`;
+                    confetti.style.animationDelay = `${Math.random() * 4}s`;
+                    confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                    confettiContainer.appendChild(confetti);
+                }
+            }
+
+            createConfetti();
+        </script>
+    </body>
 </html>
