@@ -1,87 +1,10 @@
 <!doctype html>
-    <html>
+<html>
     <head>
-    <title>Ophura</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f3f3e2;
-            margin: 0;
-            overflow: hidden
-        }
-        
-        #hello {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 48px;
-            color: #73ede5;
-            text-shadow: 2px 2px 4px rgba(18, 13, 5, 0.5)
-        }
-        
-        #hello:hover {
-            animation: shake 0.5s infinite
-        }
-        
-        @keyframes shake {
-            0% { transform: translate(-50%, -50%) }
-            25% { transform: translate(-50%, -50%) rotate(-5deg) }
-            75% { transform: translate(-50%, -50%) rotate(5deg) }
-            100% { transform: translate(-50%, -50%) }
-        }
-        
-        #confetti {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-            z-index: 9999
-        }
-        
-        .confetti {
-            position: absolute;
-            width: 10px;
-            height: 10px;
-            background-color: #ff6384;
-            border-radius: 50%;
-            pointer-events: none;
-            animation: confetti-fall 4s infinite
-        }
-        
-        @keyframes confetti-fall {
-            0% {
-                transform: translate(-50%, -50%) rotate(0deg);
-                opacity: 1
-            }
-            100% {
-                transform: translate(-50%, 100vh) rotate(720deg);
-                opacity: 0
-            }
-        }
-    </style>
+        <title>Ophura</title>
     </head>
-        <body>
-        <div id="hello" style="user-select: none">Ophura!</div>
-        <div id="confetti"></div>
-        <script>
-            function createConfetti() {
-                const confettiContainer = document.getElementById('confetti');
-                const colors = ['#ff6384', '#36a2eb', '#ffcd56', '#ff9f40'];
-                
-                for (let i = 0; i < 100; i++) {
-                    const confetti = document.createElement('div');
-                    confetti.className = 'confetti';
-                    confetti.style.left = `${Math.random() * 100}%`;
-                    confetti.style.animationDelay = `${Math.random() * 4}s`;
-                    confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
-                    confettiContainer.appendChild(confetti);
-                }
-            }
-
-            createConfetti();
-        </script>
+    <body>
+        <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+        </iframe>
     </body>
 </html>
