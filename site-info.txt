@@ -1,4 +1,4 @@
 This Website is under construction ATM...
 
-any progress will directly be pushed
-to the following repo: <https://github.com/ophura/will-do-it-tomorrow>
+any progress will directly be pushed to
+the following repo: <https://github.com/ophura/will-do-it-tomorrow>
