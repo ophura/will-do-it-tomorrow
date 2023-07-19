@@ -1,7 +1,7 @@
 body {
 	background-color: #0F0F0F;
 	font-family: 'Cascadia Code', sans-serif;
-	color: #D7D7D7
+	color: #D7D7D7;
 }
 
 body.non-selectable {
@@ -13,8 +13,9 @@ body.non-selectable {
 
 h2 invert {
 	display: inline-block;
-	-moz-transform: scale(-1, 1);
 	-webkit-transform: scale(-1, 1);
+	-moz-transform: scale(-1, 1);
+	-ms-transform: scale(-1, 1);
 	transform: scale(-1, 1);
 }
 
@@ -33,7 +34,7 @@ h2 grayout {
 }
 
 h2 exec {
-	color: #F9F1A5
+	color: #F9F1A5;
 }
 
 h2.no-top-margin {
