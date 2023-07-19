@@ -35,3 +35,11 @@ h2 grayout {
 h2 exec {
 	color: #F9F1A5
 }
+
+h2.no-top-margin {
+	margin-top: 0 !important;
+}
+
+h2.no-bottom-margin {
+	margin-bottom: 0 !important;
+}
