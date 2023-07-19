@@ -1,11 +1,74 @@
 <!doctype html>
 <html>
-    <head>
-        <link href="./stylesheet/cascadia-code-fonts.css" rel="stylesheet" />
-        <link href="./stylesheet/stylesheet.css" rel="stylesheet" />
-        <title>Ophura</title>
-    </head>
-    <body>
-        <h1>this website is under construction at the moment...</h1>
-    </body>
+<head>
+    <style type="text/css">
+        body {
+            background-color: #0F0F0F;
+            font-family: 'Cascadia Code', sans-serif;
+            color: #D7D7D7
+        }
+
+        body.non-selectable {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        h2 invert {
+            display: inline-block;
+            -moz-transform: scale(-1, 1);
+            -webkit-transform: scale(-1, 1);
+            transform: scale(-1, 1);
+        }
+
+        h2 blink {
+            animation: blink steps(1) 1.1s infinite;
+        }
+
+        @keyframes blink {
+            50% {
+                color: transparent;
+            }
+        }
+        
+        h2 grayout {
+            color: #828282;
+        }
+
+        h2 exec {
+            color: #F9F1A5
+        }
+    </style>
+    <link type="text/css" rel="stylesheet" href="./styles.css">
+    <title>Ophura</title>
+</head>
+<body class="non-selectable">
+    <div>
+        <h2>
+            Almanda IBM<br>
+            Copyleft &lpar;<invert>C</invert>&rpar; Ophura&period; All rights reversed&period;
+            <a href="https://en.wikipedia.org/wiki/Copyleft" target="_blank">&lt;https&colon;&sol;&sol;wikipedia&period;org&sol;copyleft&period;html&gt;</a>
+        </h2>
+    </div>
+    <div>
+        <h2>
+            IBM <grayout>&colon;<invert>C</invert>&sol;Losers&sol;admin&sol;repos&sol;will&#x2d;do&#x2d;it-tomorrow&gt;</grayout> <exec>cat</exec> site&#x2d;info&period;txt
+        </h2>
+    </div>
+    <div>
+        <h2>
+            <grayout>
+                This Website is under construction ATM&period;&period;&period;<br><br>
+                any progress will directly be pushed <br> to the following repo&colon;
+            </grayout>
+            <a href="https://github.com/ophura/will-do-it-tomorrow">&lt;https&colon;&sol;&sol;github&period;com&sol;ophura&sol;will-do-it-tomorrow&gt;</a>
+        </h2>
+    </div>
+    <div>
+        <h2>
+            IBM <grayout>&colon;<invert>C</invert>&sol;Losers&sol;admin&sol;repos&sol;will&#x2d;do&#x2d;it-tomorrow&gt;</grayout> <blink>|</blink>
+        </h2>
+    </div>
+</body>
 </html>
