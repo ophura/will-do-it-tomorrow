@@ -11,6 +11,10 @@ body.non-selectable {
 	user-select: none;
 }
 
+img.no-drag {
+	-webkit-user-drag: none;
+}
+
 h2 invert {
 	display: inline-block;
 	-webkit-transform: scale(-1, 1);
