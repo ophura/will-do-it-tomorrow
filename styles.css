@@ -6,6 +6,8 @@ html body {
 }
 
 html body div h2 img.invert-color {
+	width: 24;
+	height: 24;
 	filter: invert(1);
 }
 
@@ -22,6 +24,7 @@ html body div h2 horizontal-inversion {
 	-ms-transform: scale(-1, 1);
 	transform: scale(-1, 1);
 	display: inline-block;
+	font-size: 24px;
 }
 
 @-webkit-keyframes kfs-blink { 50% { color: #00000000 } }
@@ -37,6 +40,7 @@ html body div h2 caret-char {
 	-o-animation: kfs-blink step-start 1.1s infinite;
 	animation: kfs-blink step-start 1.1s infinite;
 	display: inline-block;
+	font-size: 24px;
 }
 
 html body div h2 {
