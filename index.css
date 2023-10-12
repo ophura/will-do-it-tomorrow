@@ -22,3 +22,11 @@ p {
 	/* Edge Adjustments */
 	margin: 0px !important;
 }
+
+span#lts,
+span#gts,
+a {
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+}
