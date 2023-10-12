@@ -7,15 +7,27 @@
     <title>Ophura</title>
 </head>
 
-<body>
+<body onload="main()">
     <p>
-        <span>This Website is under construction ATM...</span>
+        <span id="frst_line"></span>
         <br>
         <br>
-        <span>Any progress will be directly pushed to the following repo:</span>
+        <span id="scnd_line"></span>
         <br>
-        &lt;<a href="https://github.com/ophura/will-do-it-tomorrow">https://girlhug.com/ophura/will-do-it-tomorrow</a>&gt;
+        <span id="lts">&lt;</span><a id="link_line"></a><span id="gts">&gt;</span>
     </p>
+    <script>
+        const main = () => {
+            /* Text */
+            frst_line.innerText = 'This Website is under construction ATM...';
+            /* Text */
+            scnd_line.innerText = 'Any progress will be directly pushed to the following repo:';
+            /* Link */
+            link_line.target = '_blank';
+            link_line.href = 'https://github.com/ophura/will-do-it-tomorrow';
+            link_line.innerText = 'https://girlhug.com/ophura/will-do-it-tomorrow';
+        }
+    </script>
 </body>
 
 </html>
