@@ -1,19 +1,32 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
 
 <head>
-    <meta name="color-scheme" content="light dark">
     <link type="image/x-icon" rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="index.css">
     <title>Ophura</title>
 </head>
 
-<body>
-    <pre style="font-family: 'Cascadia Mono', sans-serif; text-align: left; margin: 0px;">
-        This Website is under construction ATM...
-        
-        Any progress will be directly pushed to the following repo:
-        <a href="https://github.com/ophura/will-do-it-tomorrow">&lt;https://girlhug.com/ophura/will-do-it-tomorrow&gt;</a>
-    </pre>
+<body onload="main()">
+    <p>
+        <span id="frst_line"></span>
+        <br>
+        <br>
+        <span id="scnd_line"></span>
+        <br>
+        <span id="lts">&lt;</span><a id="link_line"></a><span id="gts">&gt;</span>
+    </p>
+    <script>
+        const main = () => {
+            /* Text */
+            frst_line.innerText = 'This Website is under construction ATM...';
+            scnd_line.innerText = 'Any progress will be directly pushed to the following repo:';
+            /* Link */
+            link_line.target = '_blank';
+            link_line.href = 'https://github.com/ophura/will-do-it-tomorrow';
+            link_line.innerText = 'https://girlhug.com/ophura/will-do-it-tomorrow';
+        }
+    </script>
 </body>
 
 </html>
