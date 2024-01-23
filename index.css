@@ -1,32 +1,19 @@
-html {
-	/* Edge Adjustments */
-	margin: 0px !important;;
-	padding: 0px !important;;
-}
-
 body {
-	/* Theme Colors */
-	color: azure !important;
-	background-color: #121212 !important;
+	margin: unset;
 
-	/* Font Specification */
-	font-size: x-large !important;
-	font-family: 'Cascadia Code', monospace !important;
+	font-family: 'Cascadia Code', monospace;
+	font-size: x-large;
 
-	/* Edge Adjustments */
-	margin: 14px !important;
-	padding: 0px !important;
+	color: azure;
+	background-color: #121212;
 }
 
 p {
-	/* Edge Adjustments */
-	margin: 0px !important;
+	margin: .9rem;
 }
 
 span#lts,
 span#gts,
 a {
 	user-select: none;
-	-moz-user-select: none;
-	-webkit-user-select: none;
 }
