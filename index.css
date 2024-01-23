@@ -12,8 +12,7 @@ p {
 	margin: .9rem;
 }
 
-span#lts,
-span#gts,
-a {
+span.lts>a,
+span.gts>a {
 	user-select: none;
 }
