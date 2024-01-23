@@ -1,7 +1,7 @@
 body {
 	margin: unset;
 
-	font-family: 'Cascadia Mono', monospace;
+	font-family: 'Cascadia Code', monospace;
 	font-size: x-large;
 
 	color: azure;
@@ -12,7 +12,8 @@ p {
 	margin: .9rem;
 }
 
-span.lts>a,
-span.gts>a {
+span#lts,
+span#gts,
+a {
 	user-select: none;
 }
